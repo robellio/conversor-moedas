@@ -1,5 +1,6 @@
 package br.com.alura.conversor;
 
+import br.com.alura.conversor.principal.Principal;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,6 +14,7 @@ public class ConversorApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Bem vindo ao Conversor de Moedas!");
+		Principal principal = new Principal();
+		principal.exibirMenu();
 	}
 }
